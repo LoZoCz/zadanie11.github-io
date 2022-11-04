@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    font-family: Montserrat;
+    display: grid;
+    grid-template-rows: 15% 75% 10%;
+    gap: 10px;
+    margin: 0;
+    padding: 50px 100px;
+}
+
+article{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: center;
+    border: 3px solid lightblue;
+    border-radius: 0.5rem;
+}
+
+article p{
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.content, picture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+picture img{
+    height: 300px;
+    transition: ease-in-out 0.15s;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.inputs input{
+    font-size: 18px;
+    font-family: inherit;
+    background: #B8F2E6;
+    color: #5E6472;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 0.7rem;
+    transition: ease-in-out 0.15s;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.btns{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.btns button{
+    width: 48%;
+    font-size: 18px;
+    font-family: inherit;
+    background: #5E6472;
+    color: #B8F2E6;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 0.7rem;
+    transition: ease-in-out 0.15s;
+    cursor: pointer;
+}
+
+.btns button:hover,
+.inputs input:hover,
+.inputs input:focus,
+picture img:hover{
+    transform: scale(1.1);
+}
+
+
+header, footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid lightblue;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+}
